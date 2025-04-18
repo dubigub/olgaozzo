@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovate Conference</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .back-to-top {
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-3px);
+        }
+        
+        .ticket-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Hero Section -->
+    <header class="relative bg-gray-900 text-white">
+        <div class="absolute inset-0 hero-overlay">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                 alt="Conference audience" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-6xl mx-auto px-4 py-32 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Innovate Conference 2023</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Join the leading minds in technology and innovation</p>
+            <button id="registerBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300">
+                Register Now
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        <!-- Event Information -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Event Information</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-gray-600 mb-6 text-lg">The Innovate Conference brings together industry leaders, innovators, and entrepreneurs to explore the latest trends in technology and business. This year's focus is on sustainable innovation in a digital world.</p>
+                    <p class="text-gray-600 mb-6 text-lg">Join us for two days of inspiring keynotes, interactive workshops, and valuable networking opportunities with professionals from around the globe.</p>
+                </div>
+                <div class="bg-gray-100 rounded-xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Conference venue" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Speakers -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Speakers</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Speaker 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Speaker 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Sarah Johnson</h3>
+                        <p class="text-indigo-600 mb-3">CEO, TechForward</p>
+                        <p class="text-gray-600">Leading expert in AI and machine learning applications for business transformation.</p>
+                    </div>
+                </div>
+                
+                <!-- Speaker 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Speaker 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Michael Chen</h3>
+                        <p class="text-indigo-600 mb-3">CTO, NexGen Labs</p>
+                        <p class="text-gray-600">Pioneer in quantum computing and its practical applications in various industries.</p>
+                    </div>
+                </div>
+                
+                <!-- Speaker 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" 
+                             alt="Speaker 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Emma Rodriguez</h3>
+                        <p class="text-indigo-600 mb-3">Head of Design, CreativeMinds</p>
+                        <p class="text-gray-600">Award-winning designer specializing in human-centered design and digital experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Awaits You Section -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Awaits You</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md text-center transition duration-300">
+                    <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-microphone text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Inspiring Keynotes</h3>
+                    <p class="text-gray-600">Learn from industry leaders and visionaries</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md text-center transition duration-300">
+                    <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Networking</h3>
+                    <p class="text-gray-600">Connect with professionals and peers</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md text-center transition duration-300">
+                    <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Workshops</h3>
+                    <p class="text-gray-600">Hands-on sessions with experts</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md text-center transition duration-300">
+                    <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Innovation</h3>
+                    <p class="text-gray-600">Discover cutting-edge technologies</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md text-center transition duration-300">
+                    <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Catering</h3>
+                    <p class="text-gray-600">Enjoy delicious meals and refreshments</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's Included Section -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What's Included in the Ticket Price</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-8 max-w-2xl mx-auto">
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <div class="bg-green-100 text-green-600 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <p class="text-gray-700">Full access to all conference sessions and keynotes</p>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-green-100 text-green-600 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <p class="text-gray-700">Lunch and refreshments throughout the event</p>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-green-100 text-green-600 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <p class="text-gray-700">Networking opportunities with speakers and attendees</p>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-green-100 text-green-600 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <p class="text-gray-700">Conference materials and digital goodie bag</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Ticket Price Section -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Ticket Price</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            <div class="flex justify-center">
+                <div class="ticket-card bg-white rounded-xl p-8 text-center max-w-md w-full">
+                    <div class="text-5xl font-bold text-indigo-600 mb-2">$50</div>
+                    <p class="text-gray-600 mb-6">Участие в конференции</p>
+                    <button id="orderTicketBtn" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
+                        Заказать билет
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Event Location</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 rounded-xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Conference venue" class="w-full h-full object-cover">
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Grand Horizon Center</h3>
+                    <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt text-indigo-600 mr-2"></i> 123 Innovation Avenue, Tech City</p>
+                    <p class="text-gray-600 mb-6">A state-of-the-art conference facility with cutting-edge technology and comfortable spaces designed to foster collaboration and learning.</p>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <p class="font-semibold text-gray-800 mb-1">November 15-16, 2023</p>
+                        <p class="text-gray-600">9:00 AM - 6:00 PM daily</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-6">Innovate Conference 2023</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Join us for two days of inspiration, innovation, and networking with industry leaders.</p>
+            <div class="flex justify-center space-x-4 mb-8">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <i class="fab fa-facebook text-xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-400">© 2023 Innovate Conference. All rights reserved.</p>
+        </div>
+        <button id="backToTop" class="back-to-top fixed bottom-6 right-6 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition duration-300 opacity-0 pointer-events-none">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script>
+        // Smooth scroll to top
+        document.getElementById('backToTop').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Register button functionality
+        document.getElementById('registerBtn').addEventListener('click', function() {
+            alert('Registration form would open here!');
+        });
+
+        // Order ticket button functionality
+        document.getElementById('orderTicketBtn').addEventListener('click', function() {
+            alert('Ticket purchase form would open here!');
+        });
+
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('opacity-100');
+                backToTopButton.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'pointer-events-none');
+                backToTopButton.classList.remove('opacity-100');
+            }
+        });
+    </script>
+</body>
+</html>
