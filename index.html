@@ -231,16 +231,16 @@
         </section> -->
 
         <!-- Ticket Price Section -->
-        <section class="mb-20">
+       <!--  <section class="mb-20">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Стоимость билета</h2>
                 <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
             </div>
-            <div class="flex justify-center">
+            <div class="flex justify-center"> -->
                 <!-- Вставьте этот код вместо текущей кнопки "Заказать билет" -->
-<div class="ticket-card bg-white rounded-xl p-8 text-center max-w-md w-full">
+<!-- <div class="ticket-card bg-white rounded-xl p-8 text-center max-w-md w-full">
     <div class="text-5xl font-bold text-indigo-600 mb-2">₽2500</div>
-    <p class="text-gray-600 mb-6">Участие в конференции</p>
+    <p class="text-gray-600 mb-6">Участие в конференции</p> -->
     
     <!-- Простая форма для сбора email -->
     <!-- <form id="paymentForm" class="mb-4">
@@ -300,19 +300,19 @@
     }
 </style>
 <script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
-<form class="payform-tbank" name="payform-tbank" id="payform-tbank">
+<form class="payform-tbank " name="payform-tbank" id="payform-tbank">
     <input class="payform-tbank-row" type="hidden" name="terminalkey" value="1745000037416">
     <input class="payform-tbank-row" type="hidden" name="frame" value="false">
     <input class="payform-tbank-row" type="hidden" name="language" value="ru">
     <input class="payform-tbank-row" type="hidden" name="receipt" value="true">
     <input class="payform-tbank-row" text="hidden" placeholder="Сумма заказа" name="amount" value="2500" readonly>
     <input class="payform-tbank-row" type="hidden" placeholder="Номер заказа" name="order">
-    <input class="payform-tbank-row" type="text" placeholder="Описание заказа" name="description" value="Билет на конференцию" readonly>
+    <input class="payform-tbank-row" type="text" placeholder="Описание заказа" name="description" value="Билет на мероприятие" readonly>
     <input class="payform-tbank-row" type="text" placeholder="ФИО плательщика" name="name">
     <input class="payform-tbank-row" type="email" placeholder="E-mail" name="email">
     <input class="payform-tbank-row" type="tel" placeholder="Контактный телефон" name="phone">
     <input class="payform-tbank-row payform-tbank-btn" type="submit" value="Оплатить">
-     <p class="text-xs text-gray-500">После нажатия вы перейдете на безопасную страницу оплаты Тинькофф</p>
+     <p class="text-xs text-gray-500 mb-20">После нажатия вы перейдете на безопасную страницу оплаты Тинькофф</p>
 </form>
 <script type="text/javascript">
     const TPF = document.getElementById("payform-tbank");
